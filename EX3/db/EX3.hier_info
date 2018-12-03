@@ -1,0 +1,89 @@
+|EX3
+clk => div_12:u1.clk
+reset => cout_8421:u2.reset
+EX[0] <= seg7_1:u3.b[0]
+EX[1] <= seg7_1:u3.b[1]
+EX[2] <= seg7_1:u3.b[2]
+EX[3] <= seg7_1:u3.b[3]
+EX[4] <= seg7_1:u3.b[4]
+EX[5] <= seg7_1:u3.b[5]
+EX[6] <= seg7_1:u3.b[6]
+c[0] <= seg7_1:u3.c[0]
+c[1] <= seg7_1:u3.c[1]
+c[2] <= seg7_1:u3.c[2]
+c[3] <= seg7_1:u3.c[3]
+c[4] <= seg7_1:u3.c[4]
+c[5] <= seg7_1:u3.c[5]
+c[6] <= seg7_1:u3.c[6]
+c[7] <= seg7_1:u3.c[7]
+
+
+|EX3|div_12:u1
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+clk => q_temp.CLK
+q <= q_temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EX3|cout_8421:u2
+clk => q_temp[3].CLK
+clk => q_temp[2].CLK
+clk => q_temp[1].CLK
+clk => q_temp[0].CLK
+reset => q_temp[3].ACLR
+reset => q_temp[2].ACLR
+reset => q_temp[1].ACLR
+reset => q_temp[0].ACLR
+q[0] <= q_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q_temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EX3|seg7_1:u3
+a[0] => Mux6.IN19
+a[0] => Mux5.IN19
+a[0] => Mux4.IN19
+a[0] => Mux3.IN19
+a[0] => Mux2.IN19
+a[0] => Mux1.IN19
+a[0] => Mux0.IN19
+a[1] => Mux6.IN18
+a[1] => Mux5.IN18
+a[1] => Mux4.IN18
+a[1] => Mux3.IN18
+a[1] => Mux2.IN18
+a[1] => Mux1.IN18
+a[1] => Mux0.IN18
+a[2] => Mux6.IN17
+a[2] => Mux5.IN17
+a[2] => Mux4.IN17
+a[2] => Mux3.IN17
+a[2] => Mux2.IN17
+a[2] => Mux1.IN17
+a[2] => Mux0.IN17
+a[3] => Mux6.IN16
+a[3] => Mux5.IN16
+a[3] => Mux4.IN16
+a[3] => Mux3.IN16
+a[3] => Mux2.IN16
+a[3] => Mux1.IN16
+a[3] => Mux0.IN16
+b[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+b[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+b[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+b[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+c[0] <= <VCC>
+c[1] <= <VCC>
+c[2] <= <VCC>
+c[3] <= <VCC>
+c[4] <= <VCC>
+c[5] <= <GND>
+c[6] <= <VCC>
+c[7] <= <VCC>
+
+

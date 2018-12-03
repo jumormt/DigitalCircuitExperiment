@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Apr 19 20:59:29 2016
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : fulladder
+Top-level Entity Name : fulladder
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 2 / 1,270 ( < 1 % )
+Total pins : 5 / 116 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

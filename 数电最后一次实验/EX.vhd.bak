@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity EX is
+port
+(
+clk,reset:in std_logic;
+diout:out std_logic_vector (6 downto 0);
+cat:out std_logic_vector (5 downto 0)
+);
+end EX;
+
+architecture EX_arch of EX is
+signal clk2:std_logic;
+component div_2000 is
+port
+(
+clk:in std_logic;
+q:out std_logic
+);
+end component;
+
+component DigitalScanning is
+port
+(
+clk,reset:in std_logic;
+diout:out std_logic_vector (6 downto 0);
+cat:out std_logic_vector (5 downto 0)
+);
+end component;
+begin
+u1:div_2000 port map(clk,clk2);
+u2:DigitalScanning port map(clk2,reset,diout,cat);
+
+end EX_arch;

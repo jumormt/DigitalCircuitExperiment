@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue May 10 16:11:16 2016
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : DigitalScanning
+Top-level Entity Name : DigitalScanning
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 25 / 1,270 ( 2 % )
+Total pins : 15 / 116 ( 13 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

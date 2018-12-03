@@ -1,0 +1,77 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Full Version
+# Date created = 20:08:10  April 26, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		seg7_1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY seg7_1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:08:10  APRIL 26, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 5
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name VHDL_FILE seg7_1.vhd
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "H:/seg7_1/seg7_1.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_125 -to a[3]
+set_location_assignment PIN_127 -to a[2]
+set_location_assignment PIN_129 -to a[1]
+set_location_assignment PIN_130 -to a[0]
+set_location_assignment PIN_62 -to b[6]
+set_location_assignment PIN_59 -to b[5]
+set_location_assignment PIN_58 -to b[4]
+set_location_assignment PIN_57 -to b[3]
+set_location_assignment PIN_55 -to b[2]
+set_location_assignment PIN_53 -to b[1]
+set_location_assignment PIN_52 -to b[0]
+set_location_assignment PIN_31 -to c[7]
+set_location_assignment PIN_30 -to c[6]
+set_location_assignment PIN_70 -to c[5]
+set_location_assignment PIN_69 -to c[4]
+set_location_assignment PIN_68 -to c[3]
+set_location_assignment PIN_67 -to c[2]
+set_location_assignment PIN_66 -to c[1]
+set_location_assignment PIN_63 -to c[0]
+set_global_assignment -name MISC_FILE "C:/≥Ã‰Ï/seg7_1/seg7_1.dpf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE seg7_1.vwf

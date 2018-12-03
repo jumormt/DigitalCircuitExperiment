@@ -1,0 +1,32 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY vote4 IS
+  PORT
+  (
+    a:in std_logic_vector (3 downto 0);
+    b:out std_logic_vector (6 downto 0)
+  );
+end vote4;
+
+architecture vote4_arc of vote4 is
+begin
+  process(a)
+  begin
+    case a is
+       when "0000"=>b<="1111110"; --0
+       when "0001"=>b<="0110000"; --1
+       when "0010"=>b<="1101101"; --2
+       when "0011"=>b<="1111001"; --3
+       when "0100"=>b<="0110011"; --4
+       when "0101"=>b<="1011011"; --5
+       when "0110"=>b<="1011111"; --6
+       when "0111"=>b<="1110000"; --7
+       when "1000"=>b<="1111111"; --8
+       when "1001"=>b<="1111011"; --9
+       when others =>b<="0000000";
+    end case;
+  end process;
+end;
+
+       

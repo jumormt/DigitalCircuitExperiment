@@ -1,0 +1,174 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+42
+3112
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+EX3
+# storage
+db|EX3.(0).cnf
+db|EX3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+EX3.vhd
+8650c3589b88771799cbd57653758e9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+div_12
+# storage
+db|EX3.(1).cnf
+db|EX3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|div_12|div_12.vhd
+15ffa71494b95a726bb13386731e19f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+div_12:u1
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+cout_8421
+# storage
+db|EX3.(2).cnf
+db|EX3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|count_8421|cout_8421.vhd
+b0db112d75a3285a5cb39deb549c96
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+cout_8421:u2
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+seg7_1
+# storage
+db|EX3.(3).cnf
+db|EX3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|seg7_1|seg7_1.vhd
+6f361ac3fc014c3cbb7b2c69496fffd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(c)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+seg7_1:u3
+}
+# lmf
+d:|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

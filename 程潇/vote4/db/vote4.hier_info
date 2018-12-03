@@ -1,0 +1,8 @@
+|vote4
+v1 => Mux0.IN16
+v2 => Mux0.IN17
+v3 => Mux0.IN18
+v4 => Mux0.IN19
+result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

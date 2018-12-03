@@ -1,0 +1,232 @@
+Classic Timing Analyzer report for EX3
+Fri May 06 18:04:15 2016
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. tco
+  8. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                        ;
++------------------------------+-------+---------------+------------------------------------------------+------------------------+------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                   ; To                     ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+------------------------+------------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 17.999 ns                                      ; cout_8421:u2|q_temp[1] ; EX[5]                  ; clk        ; --       ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[2] ; cout_8421:u2|q_temp[1] ; clk        ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;                        ;                        ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+------------------------+------------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EPM1270T144C5      ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                   ;
++-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                   ; To                     ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[2] ; cout_8421:u2|q_temp[1] ; clk        ; clk      ; None                        ; None                      ; 2.356 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[0] ; cout_8421:u2|q_temp[2] ; clk        ; clk      ; None                        ; None                      ; 2.253 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[1] ; cout_8421:u2|q_temp[1] ; clk        ; clk      ; None                        ; None                      ; 2.222 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[3] ; cout_8421:u2|q_temp[1] ; clk        ; clk      ; None                        ; None                      ; 2.177 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[3] ; cout_8421:u2|q_temp[3] ; clk        ; clk      ; None                        ; None                      ; 2.165 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|q_temp       ; div_12:u1|q_temp       ; clk        ; clk      ; None                        ; None                      ; 2.085 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[1] ; cout_8421:u2|q_temp[3] ; clk        ; clk      ; None                        ; None                      ; 2.055 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[0]      ; div_12:u1|q_temp       ; clk        ; clk      ; None                        ; None                      ; 2.037 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[2]      ; div_12:u1|temp[1]      ; clk        ; clk      ; None                        ; None                      ; 2.027 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[2]      ; div_12:u1|temp[2]      ; clk        ; clk      ; None                        ; None                      ; 2.024 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[2] ; cout_8421:u2|q_temp[3] ; clk        ; clk      ; None                        ; None                      ; 1.891 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[2] ; cout_8421:u2|q_temp[2] ; clk        ; clk      ; None                        ; None                      ; 1.878 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[1]      ; div_12:u1|q_temp       ; clk        ; clk      ; None                        ; None                      ; 1.799 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[1]      ; div_12:u1|temp[2]      ; clk        ; clk      ; None                        ; None                      ; 1.795 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[1]      ; div_12:u1|temp[1]      ; clk        ; clk      ; None                        ; None                      ; 1.789 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[0] ; cout_8421:u2|q_temp[3] ; clk        ; clk      ; None                        ; None                      ; 1.685 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[0] ; cout_8421:u2|q_temp[1] ; clk        ; clk      ; None                        ; None                      ; 1.674 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[0] ; cout_8421:u2|q_temp[0] ; clk        ; clk      ; None                        ; None                      ; 1.673 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; cout_8421:u2|q_temp[1] ; cout_8421:u2|q_temp[2] ; clk        ; clk      ; None                        ; None                      ; 1.581 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[0]      ; div_12:u1|temp[1]      ; clk        ; clk      ; None                        ; None                      ; 1.576 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[0]      ; div_12:u1|temp[2]      ; clk        ; clk      ; None                        ; None                      ; 1.574 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[0]      ; div_12:u1|temp[0]      ; clk        ; clk      ; None                        ; None                      ; 1.562 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; div_12:u1|temp[2]      ; div_12:u1|q_temp       ; clk        ; clk      ; None                        ; None                      ; 1.558 ns                ;
++-------+------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------+
+; tco                                                                             ;
++-------+--------------+------------+------------------------+-------+------------+
+; Slack ; Required tco ; Actual tco ; From                   ; To    ; From Clock ;
++-------+--------------+------------+------------------------+-------+------------+
+; N/A   ; None         ; 17.999 ns  ; cout_8421:u2|q_temp[1] ; EX[5] ; clk        ;
+; N/A   ; None         ; 17.973 ns  ; cout_8421:u2|q_temp[0] ; EX[1] ; clk        ;
+; N/A   ; None         ; 17.901 ns  ; cout_8421:u2|q_temp[3] ; EX[5] ; clk        ;
+; N/A   ; None         ; 17.713 ns  ; cout_8421:u2|q_temp[1] ; EX[1] ; clk        ;
+; N/A   ; None         ; 17.619 ns  ; cout_8421:u2|q_temp[3] ; EX[1] ; clk        ;
+; N/A   ; None         ; 17.576 ns  ; cout_8421:u2|q_temp[2] ; EX[1] ; clk        ;
+; N/A   ; None         ; 17.375 ns  ; cout_8421:u2|q_temp[3] ; EX[4] ; clk        ;
+; N/A   ; None         ; 17.321 ns  ; cout_8421:u2|q_temp[2] ; EX[5] ; clk        ;
+; N/A   ; None         ; 17.178 ns  ; cout_8421:u2|q_temp[0] ; EX[4] ; clk        ;
+; N/A   ; None         ; 17.106 ns  ; cout_8421:u2|q_temp[3] ; EX[0] ; clk        ;
+; N/A   ; None         ; 17.018 ns  ; cout_8421:u2|q_temp[0] ; EX[5] ; clk        ;
+; N/A   ; None         ; 16.985 ns  ; cout_8421:u2|q_temp[1] ; EX[6] ; clk        ;
+; N/A   ; None         ; 16.975 ns  ; cout_8421:u2|q_temp[0] ; EX[6] ; clk        ;
+; N/A   ; None         ; 16.887 ns  ; cout_8421:u2|q_temp[2] ; EX[0] ; clk        ;
+; N/A   ; None         ; 16.876 ns  ; cout_8421:u2|q_temp[1] ; EX[0] ; clk        ;
+; N/A   ; None         ; 16.782 ns  ; cout_8421:u2|q_temp[2] ; EX[4] ; clk        ;
+; N/A   ; None         ; 16.710 ns  ; cout_8421:u2|q_temp[2] ; EX[2] ; clk        ;
+; N/A   ; None         ; 16.685 ns  ; cout_8421:u2|q_temp[3] ; EX[6] ; clk        ;
+; N/A   ; None         ; 16.658 ns  ; cout_8421:u2|q_temp[0] ; EX[2] ; clk        ;
+; N/A   ; None         ; 16.381 ns  ; cout_8421:u2|q_temp[1] ; EX[4] ; clk        ;
+; N/A   ; None         ; 16.321 ns  ; cout_8421:u2|q_temp[2] ; EX[6] ; clk        ;
+; N/A   ; None         ; 16.237 ns  ; cout_8421:u2|q_temp[3] ; EX[2] ; clk        ;
+; N/A   ; None         ; 16.231 ns  ; cout_8421:u2|q_temp[0] ; EX[0] ; clk        ;
+; N/A   ; None         ; 16.047 ns  ; cout_8421:u2|q_temp[0] ; EX[3] ; clk        ;
+; N/A   ; None         ; 15.861 ns  ; cout_8421:u2|q_temp[1] ; EX[2] ; clk        ;
+; N/A   ; None         ; 15.786 ns  ; cout_8421:u2|q_temp[1] ; EX[3] ; clk        ;
+; N/A   ; None         ; 15.685 ns  ; cout_8421:u2|q_temp[3] ; EX[3] ; clk        ;
+; N/A   ; None         ; 15.650 ns  ; cout_8421:u2|q_temp[2] ; EX[3] ; clk        ;
++-------+--------------+------------+------------------------+-------+------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Fri May 06 18:04:15 2016
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off EX3 -c EX3
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "div_12:u1|q_temp" as buffer
+Info: Clock "clk" Internal fmax is restricted to 304.04 MHz between source register "cout_8421:u2|q_temp[2]" and destination register "cout_8421:u2|q_temp[1]"
+    Info: fmax restricted to clock pin edge rate 3.289 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 2.356 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X4_Y8_N4; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[2]'
+            Info: 2: + IC(1.295 ns) + CELL(1.061 ns) = 2.356 ns; Loc. = LC_X4_Y8_N2; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[1]'
+            Info: Total cell delay = 1.061 ns ( 45.03 % )
+            Info: Total interconnect delay = 1.295 ns ( 54.97 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "clk" to destination register is 9.554 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_18; Fanout = 4; CLK Node = 'clk'
+                Info: 2: + IC(1.738 ns) + CELL(1.294 ns) = 4.195 ns; Loc. = LC_X10_Y4_N4; Fanout = 5; REG Node = 'div_12:u1|q_temp'
+                Info: 3: + IC(4.441 ns) + CELL(0.918 ns) = 9.554 ns; Loc. = LC_X4_Y8_N2; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[1]'
+                Info: Total cell delay = 3.375 ns ( 35.33 % )
+                Info: Total interconnect delay = 6.179 ns ( 64.67 % )
+            Info: - Longest clock path from clock "clk" to source register is 9.554 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_18; Fanout = 4; CLK Node = 'clk'
+                Info: 2: + IC(1.738 ns) + CELL(1.294 ns) = 4.195 ns; Loc. = LC_X10_Y4_N4; Fanout = 5; REG Node = 'div_12:u1|q_temp'
+                Info: 3: + IC(4.441 ns) + CELL(0.918 ns) = 9.554 ns; Loc. = LC_X4_Y8_N4; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[2]'
+                Info: Total cell delay = 3.375 ns ( 35.33 % )
+                Info: Total interconnect delay = 6.179 ns ( 64.67 % )
+        Info: + Micro clock to output delay of source is 0.376 ns
+        Info: + Micro setup delay of destination is 0.333 ns
+Info: tco from clock "clk" to destination pin "EX[5]" through register "cout_8421:u2|q_temp[1]" is 17.999 ns
+    Info: + Longest clock path from clock "clk" to source register is 9.554 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.163 ns) = 1.163 ns; Loc. = PIN_18; Fanout = 4; CLK Node = 'clk'
+        Info: 2: + IC(1.738 ns) + CELL(1.294 ns) = 4.195 ns; Loc. = LC_X10_Y4_N4; Fanout = 5; REG Node = 'div_12:u1|q_temp'
+        Info: 3: + IC(4.441 ns) + CELL(0.918 ns) = 9.554 ns; Loc. = LC_X4_Y8_N2; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[1]'
+        Info: Total cell delay = 3.375 ns ( 35.33 % )
+        Info: Total interconnect delay = 6.179 ns ( 64.67 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Longest register to pin delay is 8.069 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X4_Y8_N2; Fanout = 10; REG Node = 'cout_8421:u2|q_temp[1]'
+        Info: 2: + IC(1.359 ns) + CELL(0.914 ns) = 2.273 ns; Loc. = LC_X4_Y8_N8; Fanout = 1; COMB Node = 'seg7_1:u3|Mux1~0'
+        Info: 3: + IC(3.474 ns) + CELL(2.322 ns) = 8.069 ns; Loc. = PIN_103; Fanout = 0; PIN Node = 'EX[5]'
+        Info: Total cell delay = 3.236 ns ( 40.10 % )
+        Info: Total interconnect delay = 4.833 ns ( 59.90 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 205 megabytes
+    Info: Processing ended: Fri May 06 18:04:15 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

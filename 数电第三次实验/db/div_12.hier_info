@@ -1,0 +1,8 @@
+|div_12
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+clk => q_temp.CLK
+q <= q_temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
